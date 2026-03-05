@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Review Vote</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Review Your Vote</h2>
+
+<div id="reviewList"></div>
+
+<button onclick="submitVote()">Confirm Vote</button>
+<button onclick="back()">Back</button>
+
+<script>
+
+let votes=JSON.parse(localStorage.getItem("selectedVote")||"{}")
+
+let div=document.getElementById("reviewList")
+
+for(let p in votes){
+
+div.innerHTML+=`<p><b>${p}</b> : ${votes[p]}</p>`
+
+}
+
+function submitVote(){
+
+let voter=JSON.parse(localStorage.getItem("voter"))
+
+let allVotes=JSON.parse(localStorage.getItem("votes")||"{}")
+
+allVotes[voter.lrn]=votes
+
+localStorage.setItem("votes",JSON.stringify(allVotes))
+
+alert("Thank you for voting!")
+
+window.location="index.html"
+
+}
+
+function back(){
+
+window.location="vote.html"
+
+}
+
+</script>
+
+</body>
+</html>

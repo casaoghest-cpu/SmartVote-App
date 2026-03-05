@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<h3>Add Candidate</h3>
+
+<input id="cname" placeholder="Candidate Name">
+<input id="cpos" placeholder="Position">
+<input id="cphoto" placeholder="Photo URL">
+<input id="cdesc" placeholder="Description">
+
+<button onclick="addCandidate()">Add Candidate</button>
+
+<hr>
+
+<h3>Results</h3>
+
+<button onclick="showResults()">Show Results</button>
+
+<button onclick="exportCSV()">Download Spreadsheet</button>
+
+<button onclick="reset()">Reset Election</button>
+
+<div id="resultBox"></div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

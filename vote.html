@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Vote</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2>Select Your Candidates</h2>
+
+<input id="search" placeholder="Search candidate" onkeyup="searchCandidate()">
+
+<div id="candidates"></div>
+
+<button onclick="review()">Review Vote</button>
+
+<audio id="sound">
+<source src="click.mp3" type="audio/mpeg">
+</audio>
+
+<script src="vote.js"></script>
+
+</body>
+
+</html>

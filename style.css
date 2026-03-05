@@ -1,0 +1,62 @@
+body{
+font-family: Arial;
+background:#eaf5ff;
+text-align:center;
+}
+
+h1{
+color:#1c7ed6;
+}
+
+.loginBox{
+background:white;
+width:380px;
+margin:auto;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px 15px;
+background:#4dabf7;
+border:none;
+color:white;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1c7ed6;
+}
+
+.passBox{
+display:flex;
+justify-content:center;
+}
+
+.candidateCard{
+background:white;
+padding:15px;
+margin:15px;
+border-radius:10px;
+box-shadow:0 3px 6px rgba(0,0,0,0.2);
+}
+
+img{
+border-radius:8px;
+}
+
+.desc{
+width:70%;
+margin:auto;
+margin-bottom:20px;
+}
